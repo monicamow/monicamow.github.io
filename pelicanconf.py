@@ -26,10 +26,17 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Twitter', 'https://twitter.com/mcm_xci'),
+          ('GitHub', 'https://github.com/monicamow'),)
 
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# add a theme
+THEME = 'themes/hyde'
+
+STATIC_PATHS = ['images']
+PROFILE_PICTURE = "scatter-red-icon.png"
+TWITTER_USERNAME = '@mcm_xci'
