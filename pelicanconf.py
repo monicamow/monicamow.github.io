@@ -37,5 +37,5 @@ DEFAULT_PAGINATION = 5
 # add a theme
 THEME = 'themes/hyde'
 
-PROFILE_PICTURE = "scatter-red-icon.png"
+PROFILE_IMAGE = "scatter-red-icon.png"
 TWITTER_USERNAME = '@mcm_xci'
