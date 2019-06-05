@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>The Least Square</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="/theme/css/poole.css" />
+		<link rel="stylesheet" href="/theme/css/hyde.css" />
+		<link rel="stylesheet" href="/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-0d">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="/images/scatter-red-icon.png">
+					The Least Square
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead"> </p>
+			<p></p>
+		</div>
+		<nav class="sidebar-nav">
+			<a class="sidebar-nav-item" href="mailto:mow.monica@gmail.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			<a class="sidebar-nav-item" href="https://twitter.com/mcm_xci">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a class="sidebar-nav-item" href="https://github.com/monicamow">
+				<i class="fa fa-github"></i>
+			</a>
+			<a class="sidebar-nav-item" href="https://www.linkedin.com/in/monicamow">
+				<i class="fa fa-linkedin"></i>
+			</a>
+			<a class="sidebar-nav-item" href="">
+				<i class="fa fa-feed"></i>
+			</a>
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">I love to create more work for myself!</h1>
+	<span class="post-date">Wed 05 June 2019</span>
+	<p>Setting up a development environment is always a pain. My development environment was geared toward Ruby since I used to be a Rails developer. And that environment set up was a cumulative process over several months. I had somewhat of a Python development environment, as I had Anaconda 3 installed, but I forgot how to get Jupyter Notebooks up and running in Terminal. An extra layer of complexity is that I like to have shortcut commands in Terminal so I had to set those up too. I think to avoid all this one day I will just use an IDE or a virtual environment.</p>
+<p>Anyway, here are the steps. </p>
+<h2>Install Anaconda (and Jupyter Notebooks)</h2>
+<ol>
+<li>Go <a href="https://www.anaconda.com/distribution/">to the Anaconda website</a> and download the latest distribution for Mac.</li>
+<li>Follow all the installation steps. It should install to the <code>/Users/&lt;user&gt;/anaconda3/bin/anaconda</code> path. If you go <code>which anaconda</code> in Terminal it will show this path.</li>
+<li>Jupyter Notebooks will be installed with Anaconda in the <code>/Users/&lt;user&gt;/anaconda3/bin/jupyter-notebook</code> folder. </li>
+</ol>
+<h2>Create commands and aliases for bash/zsh to make Anaconda and Jupyter Notebooks run</h2>
+<ol>
+<li>Go to your ~/.bashrc file (or ~/.zshrc file in my case since I use zsh)</li>
+<li>To make Anaconda executable, add <code>export PATH=$PATH:$HOME/anaconda3/bin</code> to the file. This will allow you to use the <code>conda</code> shortcut in Terminal.</li>
+<li>To run Jupyter Notebooks with a simple <code>jupyter-notebook</code> command, add <code>alias jupyter-notebook="/Users/&lt;user&gt;/anaconda3/bin/jupyter-notebook"</code> to the file.</li>
+</ol>
+<h2>Deal with this ridiculous matplotlib font cache issue</h2>
+<p>Do what <a href="https://stackoverflow.com/questions/35734074/problems-with-matplotlib-is-building-the-font-cache-using-fc-list-this-may-tak?rq=1">this StackOverflow post</a> says to do.</p>
+</div>
+		</div>
+	</body>
+</html>
