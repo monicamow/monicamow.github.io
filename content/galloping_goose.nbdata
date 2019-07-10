@@ -1,0 +1,6 @@
+title: Predicting Bike Traffic in Victoria, BC
+date: July 9, 2019
+author: Monica
+summary: In this post, I replicate a Python Data Science Handbook example that predicts bike traffic counts. The example in the book uses Seattle data, whereas I use bike counts from the Galloping Goose Trail in Victoria, BC.
+
+
