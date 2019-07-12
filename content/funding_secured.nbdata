@@ -1,0 +1,4 @@
+title: Funding secured.
+date: July 11, 2019
+author: Monica
+summary: In this post, I use Multinomial Naive Bayes to classify tweets as the "real" or "fake" Elon Musk. Words are filtered from each tweet, transformed into term frequency-inverse document frequency (TF-IDF) space and used as features in the model.
