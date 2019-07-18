@@ -1,0 +1,4 @@
+title: We the North: Network Analysis of Toronto Raptors passes
+date: July 18, 2019
+author: Monica
+summary: If you're Canadian and live in Ontario, it was pretty much a national duty to cheer for the Toronto Raptors during the finals against Golden State. To further jump on this bandwagon, I decided to do a network analysis of the passes made by Toronto Raptors players in the finals. I use an unoffical NBA API for data and the *__networkx*__ package.
