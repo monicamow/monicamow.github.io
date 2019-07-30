@@ -21,15 +21,15 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('My Friend\'s Blog', 'http://sampurkiss.github.io/'),
+         ('Graphic Detail', 'https://www.economist.com/graphic-detail/'),
+         ('FlowingData', 'https://flowingdata.com/'),
+         ('Atlas', 'https://www.theatlas.com/'),)
 
 # Social widget
-SOCIAL = (('twitter', 'https://twitter.com/mcm_xci'),
-          ('github', 'https://github.com/monicamow'),
-          ('linkedin', 'https://www.linkedin.com/in/monicamow'),)
+SOCIAL = (('Twitter', 'https://twitter.com/mcm_xci'),
+          ('GitHub', 'https://github.com/monicamow'),
+          ('LinkedIn', 'https://www.linkedin.com/in/monicamow'),)
 
 DEFAULT_PAGINATION = 5
 
