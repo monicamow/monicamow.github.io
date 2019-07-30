@@ -36,7 +36,17 @@ DEFAULT_PAGINATION = 5
 #RELATIVE_URLS = True
 
 # add a theme
-THEME = 'themes/hyde'
+THEME = 'themes/aboutwilson'
 
 PROFILE_IMAGE = "scatter-red-icon.png"
 TWITTER_USERNAME = '@mcm_xci'
+
+# add jupyter notebook to md
+MARKUP = ('md', 'ipynb')
+
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup']
+
+# if you create jupyter files in the content dir, snapshots are saved with the same
+# metadata. These need to be ignored. 
+IGNORE_FILES = [".ipynb_checkpoints"]
