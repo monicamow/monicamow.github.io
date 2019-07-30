@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'monicamow'
+AUTHOR = 'Monica Mow'
 SITENAME = 'The Least Square'
-SITEURL = ''
+SITEURL = 'https://monicamow.github.io'
+SITESUBTITLE = 'Trying to automate my job away.'
 
 PATH = 'content'
 
