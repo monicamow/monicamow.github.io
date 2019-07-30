@@ -1,0 +1,4 @@
+title: Elon in the Forest
+date: July 29, 2019
+author: Monica
+summary: If Elon Musk tweets in the forest and no one is there to...? Whatever. In one of my [previous posts](https://monicamow.github.io/funding-secured.html) I tried to distinguish between tweets from [@BoredElonMusk](http://twitter.com/BoredElonMusk) and [@elonmusk](http://twitter.com/elonmusk) using a Naive Bayes Classifier. Now, I attempt the same exercise but using a Random Forest Classier. Let's see which one can make a better prediction...
