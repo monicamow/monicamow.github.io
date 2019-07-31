@@ -1,0 +1,5 @@
+title: Songs I like and dislike
+date: July 31, 2019
+author: Monica
+summary: I look at the distribution of features from songs I like and dislike. I make use of the *__Spotipy__* library to access the Spotify Web API.
+
