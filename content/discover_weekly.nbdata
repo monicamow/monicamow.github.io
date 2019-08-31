@@ -1,0 +1,5 @@
+title: Custom Spotify Discover Weekly Playlist
+date: August 31, 2019
+author: Monica
+summary: Every week Spotify updates your "Discover Weekly" playlist, a customized playlist based off of your user data. Since I'm tired of going through *all 30* of the tracks to see if I like them, I decided to use machine learning algorithms to filter my Spotify Discover Weekly playlist down to less tracks. I got it down 40%!!!
+
