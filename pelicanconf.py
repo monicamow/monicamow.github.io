@@ -44,6 +44,7 @@ TWITTER_USERNAME = '@mcm_xci'
 
 # add jupyter notebook to md
 MARKUP = ('md', 'ipynb')
+IPYNB_SKIP_CSS = True
 
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
