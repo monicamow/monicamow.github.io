@@ -47,7 +47,9 @@ MARKUP = ('md', 'ipynb')
 #IPYNB_SKIP_CSS = True
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['ipynb.markup']
+PLUGINS = ['ipynb.markup', 'rmd_reader']
+
+RMD_READER_RENAME_PLOT='chunklabel'
 
 # if you create jupyter files in the content dir, snapshots are saved with the same
 # metadata. These need to be ignored. 

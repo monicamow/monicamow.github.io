@@ -1,0 +1,108 @@
+---
+title: "Word Cloud of Bank of Canada Media Release"
+subtitle: "October 30, 2019 Interest Rate Announcement"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, include=TRUE)
+```
+
+```{r, include=FALSE}
+library(pdftools)
+library(readr)
+library(tidyverse)
+library(tokenizers)
+library(wordcloud)
+library(corpus)
+```
+
+```{r}
+# first date available as PDF: March 5, 2014
+download.file("https://www.bankofcanada.ca/wp-content/uploads/2019/10/fad-press-release-2019-10-30.pdf", "fad-press-release-2019-10-30.pdf", mode = "wb")
+
+```
+
+```{r}
+
+# toc <- pdf_toc("fad-press-release-2019-10-30.pdf")
+
+#txt <- pdf_text("fad-press-release-2019-10-30.pdf") %>% tokenize_words()
+sentences <- pdf_text("fad-press-release-2019-10-30.pdf") %>% tokenize_sentences()
+
+txt <- sentences[[1]][3:26]
+txt <- txt %>% tokenize_words()
+```
+
+```{r}
+names(txt) <- paste("page", seq_along(txt), sep = "")
+# df1 <- data.frame(text = txt$page1)
+# df2 <- data.frame(text = txt$page2)
+# df <- rbind(df1, df2)
+# head(df)
+
+df = data.frame(text)
+
+for (item in txt)
+{
+    df_temp = data.frame(text = item)
+    df <- rbind(df, df_temp)
+}
+
+```
+
+```{r}
+data <- corpus_frame(df)
+
+text_filter(data)$drop_number <- TRUE
+text_filter(data)$drop_punct <- TRUE
+```
+
+```{r}
+# create stop words
+boc_stopwords <- c('per',
+                   'cent', 
+                   'percent',
+                   'rate',
+                   'bank',
+                   'canada',
+                   'monetary',
+                   'policy',
+                   'report',
+                   'mpr',
+                   'governing',
+                   'council',
+                   'year',
+                   'january',
+                   'february',
+                   'march',
+                   'april',
+                   'may',
+                   'june',
+                   'july',
+                   'august',
+                   'september',
+                   'october',
+                   'november',
+                   'december')
+```
+
+```{r}
+term_stats <- term_stats(data, subset = !term %in% boc_stopwords & !term %in% stopwords_en)
+#term_stats <- term_stats(data, subset = !term %in% stopwords_en)
+
+term_stats
+```
+
+```{r}
+png("oct2019.png", width=12,height=8, units='in', res=300)
+wordcloud(words = term_stats$term, freq = term_stats$count, min.freq = 1,
+          max.words=500, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(6, "Dark2"))
+```
+
+![](oct2019.png)
+
+
+
+
