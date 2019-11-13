@@ -47,7 +47,7 @@ MARKUP = ('md', 'ipynb')
 #IPYNB_SKIP_CSS = True
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['ipynb.markup', 'rmd_reader']
+PLUGINS = ['ipynb.markup']
 
 RMD_READER_RENAME_PLOT='chunklabel'
 
